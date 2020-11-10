@@ -8,11 +8,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def recommender(model_df):
+def recommender(model_df, cv):
     
     # get inputs for recommender system
 
-    key_words = input('Please enter keywords')
+    key_words = cv
     
     # clean input
     key_words = _removeNonAscii(key_words)
@@ -50,6 +50,5 @@ def recommender(model_df):
     recommended_jobs = recommended_jobs[['job_link','job_text_cleaned', 'cosine_similarity']][1:51]
     
     model_df = 0
-    print(model_df)
     
     return recommended_jobs

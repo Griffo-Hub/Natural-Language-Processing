@@ -46,9 +46,6 @@ job_data_df.to_csv('job_descriptions.csv')
 # import data
 workpac_data = pd.read_csv('job_descriptions.csv')
 
-# make a backup
-workpac_data_original = workpac_data
-
 # remove id column as we can use index
 workpac_data = workpac_data[['job_link','job_description', 'job_title']]
 
@@ -79,7 +76,7 @@ model_df = workpac_data[['job_link', 'job_text_cleaned']]
 
 recommended_jobs = recommender(model_df)
 
-recommended_jobs = pd.merge(left=recommended_jobs, right=jobs_df, left_on='job_link', right_on='links')
+recommended_jobs = pd.merge(left=recommended_jobs, right=workpac_data, left_on='job_link', right_on='job_link')
 """
 recommended_jobs['candidate_ranking'] = 0
 
