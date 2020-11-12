@@ -47,6 +47,7 @@ def recommender(model_df, cv):
     model_df['cosine_similarity'] = dist_list
     
     recommended_jobs = model_df.sort_values('cosine_similarity', ascending=False)
+    
     recommended_jobs = recommended_jobs[['job_link','job_text_cleaned', 'cosine_similarity']][1:51]
     
     model_df = 0
