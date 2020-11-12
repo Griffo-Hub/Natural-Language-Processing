@@ -18,11 +18,11 @@ def app():
     ##### Set up data for modelling
 
     # import data to model CV against
-    workpac_data = pd.read_csv('files/job_descriptions.csv')
+    workpac_data = pd.read_csv('job_descriptions.csv')
 
     # import job_candidate data for candidate ranking feature
-    job_candidate_rank_df = pd.read_csv('files/job_candidate_similarity.csv')
-    candidates = pd.read_csv('files/candidates.csv')
+    job_candidate_rank_df = pd.read_csv('job_candidate_similarity.csv')
+    candidates = pd.read_csv('candidates.csv')
 
     # create table with just data needed for this app
 

@@ -18,7 +18,7 @@ def app():
     ##### Set up data for modelling
 
     # import data to model CV against
-    workpac_data = pd.read_csv('files/job_descriptions.csv')
+    workpac_data = pd.read_csv('job_descriptions.csv')
 
 
     # remove id column as we can use index
