@@ -41,13 +41,15 @@ def app():
     st.title('Candidate Ranking System Using Natural Language Processing (NLP)')
 
     # sidebar
-    st.sidebar.subheader('Job Selector')
+    st.subheader('Job Selector')
 
     # select box
-    selected_job = st.sidebar.selectbox(
+    selected_job = st.selectbox(
         'Please select a Job',
         (jobs)
     )
+
+    
 
     # filtered candidates
 

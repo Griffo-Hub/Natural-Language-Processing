@@ -1,5 +1,7 @@
-workpac/__pycache__/job_recommender.cpython-38.pyc
-workpac/__pycache__/job_scraper.cpython-38.pyc
-workpac/__pycache__/text_processing.cpython-38.pyc
-workpac/debug.log
-workpac/commands.txt 
+__pycache__/job_recommender.cpython-38.pyc
+__pycache__/job_scraper.cpython-38.pyc
+__pycache__/text_processing.cpython-38.pyc
+debug.log
+commands.txt 
+__pycache__/candidate_job_recommender.cpython-38.pyc
+__pycache__/job_candidate_rank.cpython-38.pyc
